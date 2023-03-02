@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FrontToBack",
+    "\\FrontToBack\\Areas",
+    "\\FrontToBack\\Areas\\AdminArea",
+    "\\FrontToBack\\Areas\\AdminArea\\Views",
+    "\\FrontToBack\\Areas\\AdminArea\\Views\\Category",
+    "\\FrontToBack\\Views",
+    "\\FrontToBack\\Views\\Shared",
+    "\\FrontToBack\\wwwroot",
+    "\\FrontToBack\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\FrontToBack\\Areas\\AdminArea\\Views\\Category\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}
