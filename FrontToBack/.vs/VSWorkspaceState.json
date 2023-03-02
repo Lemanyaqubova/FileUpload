@@ -4,6 +4,7 @@
     "\\FrontToBack",
     "\\FrontToBack\\Areas",
     "\\FrontToBack\\Areas\\AdminArea",
+    "\\FrontToBack\\Areas\\AdminArea\\Controllers",
     "\\FrontToBack\\Areas\\AdminArea\\Views",
     "\\FrontToBack\\Areas\\AdminArea\\Views\\Category",
     "\\FrontToBack\\Views",
@@ -11,6 +12,6 @@
     "\\FrontToBack\\wwwroot",
     "\\FrontToBack\\wwwroot\\js"
   ],
-  "SelectedNode": "\\FrontToBack\\Areas\\AdminArea\\Views\\Category\\Index.cshtml",
+  "SelectedNode": "\\FrontToBack\\Areas\\AdminArea\\Controllers\\CategoryController.cs",
   "PreviewInSolutionExplorer": false
 }

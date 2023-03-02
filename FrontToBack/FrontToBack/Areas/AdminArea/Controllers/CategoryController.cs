@@ -67,9 +67,21 @@ namespace FrontToBack.Areas.AdminArea.Controllers
             return View(new CategoryUpdateVM { Name=category.Name,Description=category.Description});  
         }
         [HttpPost]
-        public IActionResult Edit(CategoryUpdateVM updateVM)
+        public IActionResult Edit(int id,CategoryUpdateVM updateVM)
         {
-            Category exisCategory=_appDbContext.Categories.Find(id)
+            if (id == null) return NotFound();
+            Category existCategory = _appDbContext.Categories.Find(id);
+            if (!ModelState.IsValid) return View();
+            bool isExist = _appDbContext.Categories.Any(c => c.Name.ToLower() == updateVM.Name.ToLower()&&c.Id!=id);
+            if (isExist)
+            {
+                ModelState.AddModelError("Name", "Bu ad artig var");
+                return View();
+            }
+            if (existCategory == null) return NotFound();
+            existCategory.Description = updateVM.Description;
+            existCategory.Name = updateVM.Name;
+            _appDbContext.SaveChanges();
         }
     }
 }
