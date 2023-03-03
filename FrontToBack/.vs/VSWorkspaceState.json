@@ -4,7 +4,6 @@
     "\\FrontToBack",
     "\\FrontToBack\\Areas",
     "\\FrontToBack\\Areas\\AdminArea",
-    "\\FrontToBack\\Areas\\AdminArea\\Controllers",
     "\\FrontToBack\\Areas\\AdminArea\\Views",
     "\\FrontToBack\\Areas\\AdminArea\\Views\\Category",
     "\\FrontToBack\\Views",

@@ -2,7 +2,7 @@
 
 namespace FrontToBack.Areas.AdminArea.Controllers
 {
-    [Area("AdminArea")]
+    [Area("AdminArea")] 
     public class DashboardController : Controller
     {
         public IActionResult Index()

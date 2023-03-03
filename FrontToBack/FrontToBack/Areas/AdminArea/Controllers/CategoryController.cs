@@ -82,6 +82,17 @@ namespace FrontToBack.Areas.AdminArea.Controllers
             existCategory.Description = updateVM.Description;
             existCategory.Name = updateVM.Name;
             _appDbContext.SaveChanges();
+            return RedirectToAction("index");
         }
+        public IActionResult Delete(int id)
+        {
+            if (id == null) return NotFound();
+            Category category = _appDbContext.Categories.SingleOrDefault(c => c.Id == id);
+            if (category == null) return NotFound();
+            _appDbContext.Categories.Remove(category);
+            _appDbContext.SaveChanges();
+            return RedirectToAction("index");
+        }
+
     }
 }
