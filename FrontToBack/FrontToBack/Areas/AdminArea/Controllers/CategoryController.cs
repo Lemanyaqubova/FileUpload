@@ -49,7 +49,7 @@ namespace FrontToBack.Areas.AdminArea.Controllers
             Category newCategory = new()
             {
                 Name = category.Name,
-                Description = category.Description,
+                Description = category.Description
             };    
             //Category newCategory = new();
             //newCategory.Name = category.Name;
